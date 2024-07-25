@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Key-Value List Manager</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      #kv-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      button {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Key-Value List</h1>
+    <form id="kv-form">
+      <input type="text" id="key" placeholder="Key" required />
+      <textarea id="value" placeholder="Value" required></textarea>
+      <button type="submit">Add</button>
+    </form>
+    <table id="key-value-table">
+      <thead>
+        <tr>
+          <th>Key</th>
+          <th>Value</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="tab.js"></script>
+  </body>
+</html>
